@@ -1,0 +1,14 @@
+import random
+
+def predict_health(heart_rate, oxygen):
+    if heart_rate > 100 or oxygen < 92:
+        return "High Risk ⚠️"
+    return "Normal ✅"
+
+# Sample run
+hr = random.randint(60, 120)
+ox = random.randint(85, 100)
+
+print("Heart Rate:", hr)
+print("Oxygen:", ox)
+print("Prediction:", predict_health(hr, ox))
