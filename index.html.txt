@@ -42,10 +42,10 @@
             let heartRate = Math.floor(Math.random() * 50) + 60;
             let oxygen = Math.floor(Math.random() * 10) + 90;
 
-            let status = "Normal ✅";
+            let status = "Normal ";
 
             if (heartRate > 100 || oxygen < 92) {
-                status = "High Risk ⚠️";
+                status = "High Risk ";
             }
 
             document.getElementById("result").innerHTML =
